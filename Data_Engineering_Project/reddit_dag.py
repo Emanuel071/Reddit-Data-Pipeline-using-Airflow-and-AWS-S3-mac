@@ -9,9 +9,9 @@ from reddit_etl import run_reddit_etl
 default_args = {
 	'owner': 'airflow',
 	'depends_on_past': False, #Whether or not the DAG should consider past runs when determining if the current run should be executed.
-	'start_date': datetime(2020, 11, 8), #The date and time when the DAG should start running
-	'email': ['airflow@example.com'], #A list of email addresses that should receive notifications about the DAG's execution.
-	'email_on_failure': False, #Whether or not to send an email notification if the DAG fails.
+	'start_date': datetime(2025, 3, 6, , 5), #The date and time when the DAG should start running
+	'email': ['emanuelcalderon071@gmail.com'], #A list of email addresses that should receive notifications about the DAG's execution.
+	'email_on_failure': True, #Whether or not to send an email notification if the DAG fails.
 	'email_on_retry': False, #same but for retried
 	'retries': 1, #The number of times to retry the DAG if it fails
 	'retry_delay': timedelta(minutes=1) #The amount of time to wait before retrying the DAG if it fails
